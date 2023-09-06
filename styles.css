@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap')
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 *{
     margin:0;
@@ -7,13 +7,22 @@
     font-family:'Poppins', sans-serif;
     
 }
+.navigation-items > li{
+    margin: 0 30px;
 
-body{
+}
+main{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    
+}
+/* body{
     display:flex;
     justify-content:flex-end;
     align-items:flex-end;
     min-height:100vh;
-}
+} */
 
 footer{
     position:relative;
@@ -43,7 +52,7 @@ footer .social_icon li, footer .menu{
     }
     
 footer .social_icon li a{
-        font~size:2em;
+        font-size:2em;
         color:#fff;
         margin:0 10px;
         display:inline-block;
@@ -57,7 +66,7 @@ footer .social_icon li a{
     }
     
     footer .menu li a{
-        font~size:1.2em;
+        font-size:1.2em;
         color:#fff;
         margin:0 10px;
         display:inline-block;
