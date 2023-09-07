@@ -45,6 +45,10 @@ main{
     border-radius: 8px;
 
 }
+.container{
+    position:relative;
+    margin-bottom: 100px;
+}
 footer{
     position:relative; 
     width:100%;
