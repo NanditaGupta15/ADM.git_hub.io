@@ -45,10 +45,7 @@ main{
     border-radius: 8px;
 
 }
-#feedback{
-    position:relative;
-    margin-bottom: 100px !important;
-}
+
 /*feedback*/
 footer{
     position:relative; 
