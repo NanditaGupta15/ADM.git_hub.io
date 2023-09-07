@@ -47,7 +47,7 @@ main{
 }
 .container{
     position:relative;
-    margin-bottom: 310px;
+    margin-bottom: 310px !important;
 }
 footer{
     position:relative; 
