@@ -23,7 +23,28 @@ main{
     align-items:flex-end;
     min-height:100vh;
 } */
+/*feedback part*/
+.custom-carousel-indicators {
+    position: relative;
+    text-align: center;
+}
+.custom-carousel-indicators .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.custom-carousel-indicators .indicator.active {
+    background-color: #007bff;
+}
+.card {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 
+}
 footer{
     position:relative; 
     width:100%;
