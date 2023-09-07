@@ -45,9 +45,9 @@ main{
     border-radius: 8px;
 
 }
-.container{
+#feedback{
     position:relative;
-    margin-bottom: 310px !important;
+    margin-bottom: 210px !important;
 }
 footer{
     position:relative; 
