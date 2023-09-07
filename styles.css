@@ -47,8 +47,9 @@ main{
 }
 #feedback{
     position:relative;
-    margin-bottom: 360px !important;
+    margin-bottom: 300px !important;
 }
+/*feedback*/
 footer{
     position:relative; 
     width:100%;
