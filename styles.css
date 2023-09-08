@@ -132,6 +132,12 @@ section {
 .submit-button:hover {
     background-color: #0056b3;
 }
+@media(min-width:720px){
+    #certificate-form-section{
+        max-width:90%;
+    }
+}
+/*certification form*/
 footer{
     position:relative; 
     width:100%;
