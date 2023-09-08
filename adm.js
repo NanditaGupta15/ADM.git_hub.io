@@ -1,3 +1,23 @@
+const carousel1 = document.querySelector('.carousel');
+const slides = document.querySelectorAll('.carousel img');
+let currentIndex = 0;
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const offset = -currentIndex * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
+
 var carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'));
 var indicators = document.querySelectorAll('.indicator');
 
@@ -10,3 +30,4 @@ carousel._element.addEventListener('slide.bs.carousel', function (e) {
     
     indicators[targetIndex].classList.add('active');
 });
+
