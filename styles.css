@@ -135,6 +135,8 @@ section {
 @media(min-width:720px){
     #certificate-form-section{
         max-width:90%;
+        position:relative;
+        left:5%;
     }
 }
 /*certification form*/
