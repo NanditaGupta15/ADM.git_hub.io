@@ -132,13 +132,9 @@ section {
 .submit-button:hover {
     background-color: #0056b3;
 }
-@media(min-width:720px){
-    #certificate-form-section{
-        max-width:90%;
-        position:relative;
-        left:5%;
-    }
-}
+/* @media(min-width:720px){
+  
+} */
 /*certification form*/
 footer{
     position:relative; 
@@ -263,3 +259,4 @@ footer .social_icon li a{
                background-position-x :1000px;
               }
         }*/
+     
