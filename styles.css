@@ -59,7 +59,7 @@
 }
  /* Responsive columns */
         @media screen and (max-width: 600px) {
-            .column {
+            .column-3 {
                 width: 100%;
                 display: block;
                 margin-bottom: 10px;
@@ -67,17 +67,17 @@
  }
 
         /* Style the counter cards */
-.card {
+.card1 {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 16px;
             text-align: center;
             background-color: #f1f1f1;
 }
 
-.card:hover {
+.card1:hover {
             background-color: rgb(124, 179, 162); 
  }
- .card button {
+ .card1 button {
             border: none;
             outline: 0;
             padding: 12px;
