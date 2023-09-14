@@ -11,55 +11,6 @@
 </head>
 
 <body>
-    <!-- navigation bar with menu option -->
-     <!-- <nav class="navbar"> 
-        <div class="container-fluid">
-          <a class="navbar-brand p-1" href="#">ADM</a>
-          <div class="navbar p-10" id="navbarSupportedContent">
-            <ul class=" navbar-nav navigation-items d-flex flex-row" >
-              <li class="nav-item" >
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Our Work</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Photo Gallery</a>
-              </li>
-            </ul>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body ">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Certificate</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Internship</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Registration</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-<<<<<<< HEAD
-      </nav>  -->
-
       <nav class="navbar navbar-dark bg-dark" id="navbarSupportedContent"> 
         <div class="container-fluid">
           <div class="adm" >
@@ -79,18 +30,10 @@
             </li>
           </ul>
           
-          <!-- Vertically centered modal -->
-
-
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" >
             <span class="navbar-toggler-icon"></span>
         </button>
        </div>
-<!-- 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-           
-          </button> -->
 
     
         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
@@ -112,7 +55,7 @@
               </ul>
               <ul class="navbar-nav  navigation-items">
                 <li class="nav-items">
-                  <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                  <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticContactus" aria-current="page" href="#">Contact Us</a>
                 </li>
                 <li class="nav-items">
                   <a class="nav-link active" aria-current="page" href="#">Certificate</a>
@@ -132,52 +75,6 @@
  
           </div>
           
-              <!-- <div class="collapse offcanvas offcanvas-end p-4 bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-           
-
-                    <div class="navbar-header d-flex bg-dark">
-                        <h5 class="offcanvas-title" style="width: 90%;" id="offcanvasNavbarLabel">More option</h5>
-                        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div>
-                    
-                    <div class="offcanvas-body bg-dark text-light d-flex flex-column">
-                      <ul class="navbar-nav navigation-items "  >
-                      COMMENT d-flex d-lg-none flex-column /COMMENT
-                        <li class="nav-item" >
-                          <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Our Work</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Photo Gallery</a>
-                        </li>
-                      </ul>
-                    
-                      <ul class="navbar-nav justify-content-end d-flex flex-grow-1 pe-3 d-lg-none">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Certificate</a>
-                        </li>
-                        <li class="nav-item">
-                         
-                          <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticBackdrop" aria-current="page" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Internship</a>
-                        </li>
-                                               <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Registration</a>
-                        </li>
-                      </ul>
-                    </div>
-          </div> -->
-      
-        <!-- <button class="navbar-toggler btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
-          More 
-                          </button>  -->
       </nav> 
 
      
@@ -220,7 +117,7 @@
 </div>
 
 
-<!--Belowm is Button trigger modal dont delete even single thing, this will be pop on clicking on About Us button -->
+<!--Belowm is Button trigger modal for About US dont delete even single thing, this will be pop on clicking on About Us button -->
 <!-- Modal -->
 <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
@@ -239,6 +136,39 @@
     </div>
   </div>
 </div>
+
+<!-- Belowm is Button trigger modal for Contact US -->
+<div class="modal fade " id="staticContactus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-light">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact Us</h1>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-dark text-light">
+        <img src="adm_logo.pdf" alt="logo" style="width: 100px ; height: auto;display: block;margin: 0 auto;border-radius:5px ;">
+      
+         <label for="Emaii">Send us email to:
+           <span><a href="mailto:admissions@admedusociety.com"> admissions@admedusociety.com</a></span>
+           
+          </label>
+         <label for="phone1">Phone Number: 
+           
+           <span><a href="tel:9671457366">9671457366</a></span>
+          </label>
+          <br/>
+          <label for="phone2">Phone Number:
+            <span><a href="tel:9958586721">9958586721</a></span>
+          </label>
+        
+
+        </div>
+      <div class="modal-footer bg-dark text-light">
+      </div>
+    </div>
+  </div>
+</div>
+    
     
 
      <!-- carousel-->
