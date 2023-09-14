@@ -6,16 +6,42 @@
     font-family:'Poppins', sans-serif;
     
 }
-.navigation-items > li{
-    margin: 0 30px;
 
+.offcanvas{
+    margin: 0;
+    padding: 0;
 }
-/* body{
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-    min-height:100vh;
-} */
+.navigation-items>.nav-item{
+    margin: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+    font-weight: bold; 
+}
+
+.navigation-items > .nav-items {
+    margin: 10px 30px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    &::before{
+        content: "";
+        width: 5px;
+        height: 20px;
+        margin-right: 15px;
+        border-left: 3px solid white;
+    }
+    
+    .nav-link:hover {
+        transition: all 0.2s;
+        color: rgb(107, 231, 185);
+        text-indent: 2px;
+        /* scale: 1; */
+    }
+}
+
 /* Upcoming Event */
 /* Upcoming Event*/
 .blink {
