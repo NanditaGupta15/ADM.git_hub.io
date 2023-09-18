@@ -1,3 +1,4 @@
+
 const carousel1 = document.querySelector('.carousel');
 const slides = document.querySelectorAll('.carousel img');
 let currentIndex = 0;
@@ -35,4 +36,24 @@ carousel._element.addEventListener('slide.bs.carousel', function (e) {
     
     indicators[targetIndex].classList.add('active');
 });
+
+    // Function to scroll to the target section smoothly
+    function scrollToSection(sectionId) {
+        const section = document.querySelector(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop - 50, // Adjust the offset as needed
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Add click event listener to the "Certificate" link
+    const certificateLink = document.querySelector('a[href="#registration-form-section"]');
+    if (certificateLink) {
+        certificateLink.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            scrollToSection('#registration-form-section'); // Scroll to the target section
+        });
+    }
 
