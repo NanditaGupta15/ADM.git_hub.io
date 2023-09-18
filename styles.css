@@ -7,6 +7,7 @@
     
 }
 
+    
 .offcanvas{
     margin: 0;
     padding: 0;
@@ -359,4 +360,32 @@ footer .social_icon li a{
                background-position-x :1000px;
               }
         }*/
+
+        @media screen and  (max-width: 1100px) {
+            .map-responsive{
+                flex-direction: row;
+            }
+            
+            .map-responsive > .check{
+
+                width: 450px;
+
+                height: 400px;
+            }
+                 
+          }
+        @media screen and  (max-width: 1000px) {
+            .map-responsive{
+                flex-direction: row;
+            }
+        
+            .map-responsive > .check{
+
+                width: 350px;
+
+                height: 250px;
+            }
+                 
+          }
+
      
