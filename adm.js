@@ -57,9 +57,9 @@ carousel._element.addEventListener('slide.bs.carousel', function (e) {
         });
     }
 function myFunction1() {
-          var dots = document.getElementById("dot");
-          var moreText = document.getElementById("mor");
-          var btnText = document.getElementById("myBt");
+          var dots = document.getElementById("dote");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
           
         
           if (dots.style.display === "none") {
