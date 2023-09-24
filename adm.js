@@ -56,7 +56,7 @@ carousel._element.addEventListener('slide.bs.carousel', function (e) {
             scrollToSection('#registration-form-section'); // Scroll to the target section
         });
     }
-function myFunction1() {
+function myFunction() {
           var dots = document.getElementById("dote");
           var moreText = document.getElementById("more");
           var btnText = document.getElementById("myBtn");
