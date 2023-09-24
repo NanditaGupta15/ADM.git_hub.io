@@ -72,3 +72,19 @@ function myFunction() {
             moreText.style.display = "inline";
           }
         }
+function myFunction1() {
+          var dots = document.getElementById("dot");
+          var moreText = document.getElementById("mor");
+          var btnText = document.getElementById("myBt");
+          
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
