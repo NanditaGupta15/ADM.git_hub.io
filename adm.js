@@ -1,26 +1,36 @@
-/*const carousel1 = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.carousel img');
-let currentIndex = 0;
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
+const slides=document.querySelectorAll(".slide")
+var counter=0;
+slides.forEach(
+    (slide,index)=>{
+        slide.style.left=`${index*100}%`
+    }
+)
+const goPrev=()=>{
+    if (counter==0){
+        counter=slides.length-2;
+        slideImage();
+    }else{
+    counter--
+    slideImage()
+    }
+}
+const goNext=()=>{
+    if(counter==slides.length-2){
+        counter=0;
+        slideImage();
+    }else{
+    counter++;
+    slideImage();}
+}
+const slideImage=()=>{
+    slides.forEach(
+        (slide)=>{
+            slide.style.transform= `translateX(-${counter*100}%)`
+        }
+    )
 }
 
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-}
 
-function updateCarousel() {
-    const offset = -currentIndex * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
-}
-
-*/
 var carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'));
 var indicators = document.querySelectorAll('.indicator');
 
