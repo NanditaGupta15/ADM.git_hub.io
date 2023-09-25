@@ -1,5 +1,4 @@
-
-const carousel1 = document.querySelector('.carousel');
+/*const carousel1 = document.querySelector('.carousel');
 const slides = document.querySelectorAll('.carousel img');
 let currentIndex = 0;
 const myModal = document.getElementById('myModal')
@@ -23,7 +22,7 @@ function updateCarousel() {
     carousel.style.transform = `translateX(${offset}%)`;
 }
 
-
+*/
 var carousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'));
 var indicators = document.querySelectorAll('.indicator');
 
