@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        img {
+            height: 500px;
+        }
+
+        /* Style for Previous and Next buttons */
+        .carousel-control-prev, .carousel-control-next {
+            background-color: #000;
+            color: #fff;
+            height: 40px;
+            width: 7%;
+            top: 50%; /* Position vertically in the middle */
+            transform: translateY(-50%); /* Adjust for vertical alignment */
+            border-radius: 40px;
+        }
+        @media(max-width:780px){
+            img{
+                heig !important;;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" id="navbarSupportedContent"> 
+        <div class="container-fluid">
+          <div class="adm" >
+
+            <img class="rounded img-thumbnail" src="adm_logo.png" alt="logo" style="width: 50px; heig;border-radius:50%;">
+            <a class="navbar-brand p-1" href="index.html">Anita Devi Memorial </a>
+          </div>
+          <ul class="navbar-nav navigation-items d-none d-lg-flex flex-row  "  >
+            <li class="nav-item" >
+              <a class="nav-link" aria-current="page" title="You are on Home Page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photogallery.html">Photo Gallery</a>
+            </li>
+          </ul>
+          
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       </div>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+          <div class="offcanvas-header" style="padding: 25px  25px 0 25px ">
+            <h5 class="offcanvas-title bg-dark text-light" id="offcanvasResponsiveLabel" >Menu</h5>
+            <button type="button" data-bs-theme="light" class="btn-close bg-light" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-dark text-light ">
+            <ul class="navbar-nav navigation-items d-flex d-lg-none flex-column"  >
+                <li class="nav-item" >
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Our Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="photogallery.html">Photo Gallery</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav  navigation-items">
+                <li class="nav-items">
+                  <a class="nav-link active" href="contact_us.html">Contact Us</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link active" aria-current="page" href="#certificate-form-section">Certificate</a>
+                </li>
+                <li class="nav-items">
+                 
+                  <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticBackdrop" aria-current="page" href="#">About Us</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link active" aria-current="page" href="#">Internship</a>
+                </li>
+                                       <li class="nav-items">
+                  <a class="nav-link active" aria-current="page" href="#registration-form-section">Registration</a>
+                </li>
+              </ul>
+            </div>
+ 
+          </div>
+          
+      </nav> 
+
+    <div class="m-4">
+    <h1 class="text-center fw-bolder">Our Work</h1>
+    <!--medical camps carousel-->
+    <div>
+        <h3>Medical camps</h3>
+    <p>Your health is our priority.  ADM Educational and Welfare Society is committed to raising awareness about critical medical issues and empowering individuals to make informed decisions about their health. We believe that everyone deserves access to quality healthcare and that education is essential for improving health outcomes. Join us in our mission to build a healthier community!
+    </p>
+    <div id="carouselMedicalCamps" class="carousel carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="/camp/1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/camp/2.jpeg" class="d-block  w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/camp/3.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/camp/4.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/camp/5.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/camp/6.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMedicalCamps" data-bs-slide="prev">
+            <span class="visually-hidden">Previous</span>
+            Previous
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMedicalCamps" data-bs-slide="next">
+            <span class="visually-hidden">Next</span>Next
+          </button>
+      </div>
+      </div>
+          <!--medical camps carousel-->
+    <!--plantation carousel-->
+      <div class="my-5">
+        <h3>Plantations</h3>
+      <p>Plant a tree, plant hope. ADM Educational and Welfare Society is committed to protecting our environment and promoting sustainable development. Our plantation drives help to increase green cover, improve air quality, and combat climate change. We believe that every tree makes a difference and that we all have a role to play in protecting our planet.
+</p>
+<p>
+        Join us for our next plantation drive and help us to create a greener and healthier future for all. Or, donate a tree to be planted on your behalf.
+       </p>
+      <div id="carouselPlantations" class="carousel carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="/tree/1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/tree/2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/tree/3.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/tree/4.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/tree/5.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/tree/6.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlantations" data-bs-slide="prev">Previous
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPlantations" data-bs-slide="next">
+            Next
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+        <!--plantation carousel-->
+    <!--western visa carousel-->
+    <div class="mb-4">
+        <h3>Western World Visa Services Pvt. Ltd. </h3>
+        <p>Your dreams start here. ADM Educational and Welfare Society provides comprehensive IELTS preparation programs and abroad study counselling services to help you achieve your academic and professional goals. We believe that everyone has the potential to succeed abroad and that we all deserve the opportunity to pursue our dreams.</p>
+      <div id="carouselWesternVisa" class="carousel carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
+            <img src="/west/1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/west/2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/west/3.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/west/4.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/west/5.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/west/6.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWesternVisa" data-bs-slide="prev">
+            Previous
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselWesternVisa" data-bs-slide="next">
+            Next
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+        <!--western visa carousel-->
+</div>
+<footer>
+
+    <ul class="social_icon">
+        <li><a href="https://www.facebook.com/profile.php?id=61550722756940&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/adm-education-and-welfare-society-45a06b27b"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://twitter.com/AdmeduWelfare?t=ox6314gTX0mAFNC75wioKA&s=09"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://instagram.com/admedu.society?igshid=MzRlODBiNWFlZA=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">WebMail</a></li>
+        <li><a href="#">HelpDesk</a></li>
+        <li><a href="#">Support</a></li>
+    </ul>
+    <p>ADM Society | All Rights Reserved </p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7e8371dc0a.js" crossorigin="anonymous"></script>
+</body>
+</html>
