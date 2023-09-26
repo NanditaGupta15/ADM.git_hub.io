@@ -118,7 +118,7 @@ body {
         }
 /*main carousel*/
 main{
-    width: 70%;
+    width: inherit;
     height:500px;
     margin: auto;
     margin-top: 100px;
