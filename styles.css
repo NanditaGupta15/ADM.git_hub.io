@@ -118,9 +118,10 @@ body {
         }
 /*main carousel*/
 main{
-    width: inherit;
+    width: 70%;
     height:500px;
     margin: auto;
+    margin-top: 100px;
     position: relative;
     overflow: hidden;
 }
