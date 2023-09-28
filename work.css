@@ -104,3 +104,39 @@ footer .social_icon li a{
         font-size:1em;
         
     }
+
+        .carousel-inner {
+            padding: 0; /* Remove padding to prevent overflow */
+        }
+
+        /* Set max-width for carousel containers */
+        .carousel-container {
+            max-width: 100%; /* Adjust the value as needed */
+            margin: 0 auto; /* Center the container */
+        }
+
+
+        img {
+            height: 500px;
+        }
+
+        /* Style for Previous and Next buttons */
+        .carousel-control-prev, .carousel-control-next {
+            background-color: #000;
+            color: #fff;
+            height: 40px;
+            width: 7%;
+            top: 50%; /* Position vertically in the middle */
+            transform: translateY(-50%); /* Adjust for vertical alignment */
+            border-radius: 40px;
+            margin: 10px;
+        }
+        
+        @media(max-width:780px){
+            img{
+                height:auto !important;;
+            }
+            .carousel-control-prev, .carousel-control-next {
+                width: 15%;
+            }
+        }
