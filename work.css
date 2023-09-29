@@ -120,26 +120,6 @@ footer .social_icon li a{
             height: 500px;
         }
 
-        /* Style for Previous and Next buttons */
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
-.carousel-button-prev {
-    left: 10px;
-}
-.carousel-button-next {
-    right: 10px;
-}
-
 @media(max-width:780px){
     img{
         height:auto !important;
