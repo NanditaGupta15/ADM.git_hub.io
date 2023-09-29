@@ -136,7 +136,5 @@ footer .social_icon li a{
             img{
                 height:auto !important;;
             }
-            .carousel-control-prev, .carousel-control-next {
-                width: 15%;
-            }
+            
         }
