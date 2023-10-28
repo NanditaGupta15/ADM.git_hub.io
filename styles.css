@@ -67,7 +67,8 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  margin-bottom: 25px;
+  margin: 10px 5px 10px 5px;
+
 }
 .cards:hover {
             background-color: rgb(124, 179, 162); 
