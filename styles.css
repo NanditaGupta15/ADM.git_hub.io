@@ -5,7 +5,9 @@
     font-family:'Poppins', sans-serif;
     
 }
-
+.container{
+    padding: 8px 8%;
+  }
 .offcanvas{
     margin: 0;
     padding: 0;
@@ -61,7 +63,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the counter cards */
 /* Style the counter cards */
 .cards {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -281,5 +282,4 @@ footer .social_icon li a{
                  
         }
     
-
-     
+    
