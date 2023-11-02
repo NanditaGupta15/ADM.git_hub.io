@@ -6,6 +6,13 @@
     margin: 0;
     padding: 0;
 }
+.navbar{
+    background-color:#122a48; 
+}
+.navbar .navbar-nav .nav-item a.nav-link {
+    color: white;  
+    font-weight: bold;  
+}
 .navigation-items>.nav-item{
     margin: 10px;
     padding-left: 20px;
