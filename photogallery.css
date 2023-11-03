@@ -6,7 +6,13 @@
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
 }
-
+.navbar{
+    background-color:#122a48; 
+}
+.navbar .navbar-nav .nav-item a.nav-link {
+    color: white;  
+    font-weight: bold;  
+}
     
 .offcanvas{
     margin: 0;
@@ -87,7 +93,7 @@
 footer{
     position:relative; 
     width:auto;
-    background:black;
+    background:#122a48;
     color:white;
     padding :20px 50px;  
     display:flex;
