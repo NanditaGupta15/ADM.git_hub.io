@@ -14,7 +14,7 @@
           <div class="adm" >
 
             <img class="rounded img-thumbnail" src="adm.png" alt="logo" style="width: 100px; height: auto;border-radius:50%;">
-            <a class="navbar-brand p-1" href="index.html">Anita Devi Memorial </a>
+           <a class="navbar-brand p-1" href="index.html">Anita Devi Memorial </a>
           </div>
   <ul class="navbar-nav navigation-items ml-auto d-lg-flex flex-row"  >
     <li class="nav-item" >
@@ -78,6 +78,7 @@
       <div id="About">
 <div class="d-flex m-5 border row justify-content-evenly" style="border-radius: 20px; background-color: #c2d5da;">
     <h1 class="fw-bold text-center">Anita Devi Memorial Education and Welfare Society</h1>
+    
     <div class="col-sm-4">
     <img src="adm.png" alt="logo" style="width:99%;" class="justify-content-start m-2">
     </div>
@@ -100,12 +101,12 @@
     <div class="col-sm-6">
     <div class="cards">
       <h3>TB awarness Camp</h3>
-      <p><button>Read more</button></p>
+      <button onclick="showPopup('TBContent')">Read more</button>
 </div></div>
     <div class="col-sm-6">
     <div class="cards">
       <h3>Eye checking camp</h3>
-      <p><button>Read more</button></p>
+      <button onclick="showPopup('EyeContent')">Read more</button>
     </div>
   </div>
   </div>
@@ -113,16 +114,52 @@
     <div class="col-sm-6">
     <div class="cards">
       <h3>Medical <br />Awarness</h3>
-	    <button onclick="myFunction()" id="myBtn">Read more</button>
+	    <button onclick="showPopup('medicalContent')">Read more</button>
      </div>
   </div>
     <div class="col-sm-6">
     <div class="cards">
       <h3>Women's Empowerment </h3>
-	  <button>Read more</button>
+	  <button onclick="showPopup('WomenContent')">Read more</button>
       </div>
     </div>
 </div>
+</div>
+<div id="TBContent" class="popup-content">
+  <h2>TB awarness Camp</h2>
+  <p>Join us at our TB Awareness Camp, where we aim to raise awareness about Tuberculosis (TB), a serious health concern affecting communities globally. This informative event provides essential insights into TB prevention, early detection, and available treatments. Our experts will share valuable knowledge, enabling attendees to understand the signs and symptoms, risk factors, and best practices for prevention. Together, let's combat TB and work towards a healthier, TB-free future.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('TBContent')">&times;</button>
+</div>
+<div id="EyeContent" class="popup-content">
+  <h2>Eye checking camp</h2>
+  <p>Join us at our Eye Checking Camp, where we provide a comprehensive range of essential services to ensure optimal eye health for all participants. Our activities include free eye screenings conducted by experienced optometrists who perform thorough examinations to detect vision issues and common eye conditions. Additionally, we offer personalized vision consultations with eye care professionals, where participants can discuss their individual eye health and potential corrective measures. Through our informative eye health education sessions, attendees gain valuable insights into best eye care practices, preventive measures, and early signs of eye-related problems. We also provide eyewear assistance, guiding individuals in selecting suitable eyeglass frames and lenses tailored to their preferences and prescriptions. Beyond these services, our Eye Checking Camp fosters community engagement, allowing participants to connect with like-minded individuals dedicated to promoting eye health and overall well-being. Prioritize your vision with us and take the first step towards clearer, healthier eyes.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('EyeContent')">&times;</button>
+</div>
+<div id="medicalContent" class="popup-content">
+  <h2>Medical Awareness</h2>
+  <p>Health the most valuable asset. In spite of having all luxury and comfort in life an individual can't be happy if he/she is not healthy. Medical awareness is a vital aspect of our lives that should never be overlooked. It empowers us to take control of our health, make informed decisions, and contribute to the well-being of our communities. In a world where health is wealth. 
+    Education plays a major role in understanding the importance of health and the factors affecting it. Maintaining a proper routine, nutrition, exercise and hygiene proves to be helpful. Being aware of the causing factors even helped us during Covid period.
+    Prevention is better than cure it's a thought that suggests knowing the risk factors for any disease. Getting regular health checkups ease early detection of any medical issue.
+    Mental health being an indispensable part of life should also be considered as most of the people tend to avoid it. Being informed about your health empowers you to make decisions that are best for you. Early detection can save you and the healthcare system significant costs in the long run. Participating in community health initiatives, workshops, or support groups may expand your knowledge and heal with others.
+    Let's make a conscious effort to prioritize our well-being through medical awareness.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('medicalContent')">&times;</button>
+</div>
+<div id="WomenContent" class="popup-content">
+  <h2>Women's Empowerment</h2>
+  <p>Women's empowerment is more than simply a phrase; it represents a  shift in society's perception and approach to utilising the potential of women.
+    It's about giving women the resources, chances, and freedom to speak up, take control of their futures, and actively contribute to their communities.
+    Having access to a good education is important.Women who have more education are better able to make decisions about their lives, professions, and health that will benefit their families and communities.
+    Women who are empowered are more likely to make healthy decisions for their families and themselves, as well as to have greater access to healthcare. As a result, general health and wellbeing increase.
+    For fair and representative government, women must participate in politics. Politically empowering women makes ensuring that their opinions are taken into account and that their voices are heard when making decisions.
+    Women's empowerment results in notable transformations. Strong women frequently serve as agents of social change, fostering acceptance and harmony among neighbours.
+    Women who are empowered set an example for younger generations and encourage them to strive for excellence.
+    Women's empowerment is a societal need, not merely a problem for women. By fostering more just, and successful communities and countries, it benefits everyone. It takes coordinated efforts from governments, organisations, and individuals to attain true empowerment. 
+    It is essential that we help in empowering women and giving them the opportunity to shine as equal contributors to our common future.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('WomenContent')">&times;</button>
 </div>
      <!-- carousel-->
      <div class="col-sm-6">

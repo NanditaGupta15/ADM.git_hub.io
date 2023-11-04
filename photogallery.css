@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
 }
+.adm{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
 .navbar{
     background-color:#122a48; 
 }
