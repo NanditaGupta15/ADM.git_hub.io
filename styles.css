@@ -71,13 +71,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 /*read more vala kam*/
+.disable-scroll {
+    overflow: hidden;
+}
+#TBContent {
+    width: 75%;
+}
+#EyeContent {
+    width:75%;
+}
+#MedicalContent {
+    width: 75%;
+}
+#WomenContent {
+    width: 75%;
+}
 .popup-content {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
+    width: 98%;
     height: auto;
     padding: 20px;
     background: #07537c;
@@ -88,6 +103,7 @@ body {
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    box-shadow: #333;
 }
 
 .popup-content h2 {
