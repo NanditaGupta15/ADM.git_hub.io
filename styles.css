@@ -9,6 +9,12 @@
 .navbar{
     background-color:#122a48; 
 }
+#About {
+    height: auto;
+    width: auto;
+    font-weight: 500;
+    font-size: 18px;
+}
 .adm{
  font-weight: 700;
  font-size: 18px;
@@ -322,7 +328,59 @@ footer .social_icon li a{
 
                 height: 400px;
             }
-                 
+            #About {
+                height: auto;
+                width: auto;
+                font-weight: 500;
+                font-size: 18px;
+            }
+            .popup-content {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: auto;
+                height: auto;
+                padding: 20px;
+                background: #07537c;
+                color: white;
+                text-align: center;
+                z-index: 1;
+                border: 2px solid black;
+                font-size: 13px;
+                font-weight: 300;
+                border-radius: 10px;
+            }
+            
+            .popup-content h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            
+            .popup-content p {
+                font-size: 18px;
+                font-weight: 340;
+                margin-bottom: 20px;
+            }
+            .close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 30px;
+                color: black; 
+                background: white;
+                cursor: pointer;
+                outline: none;
+                padding: none;
+                border-radius: 10%;
+                transition: color 0.3s ease;
+            }
+            
+            .close-button:hover {
+                color: rgb(17, 23, 90); /* Change the color when hovered over */
+                transform: scale(1.2); 
+            }     
           }
         @media screen and  (max-width: 1000px) {
             .map-responsive{
@@ -335,13 +393,58 @@ footer .social_icon li a{
 
                 height: 250px;
             }
-                 
-        }
         #About {
             height: auto;
             width: auto;
             font-weight: 500;
             font-size: 18px;
         }
+        .popup-content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            height: auto;
+            padding: 20px;
+            background: #07537c;
+            color: white;
+            text-align: center;
+            z-index: 1;
+            border: 2px solid black;
+            font-size: 13px;
+            font-weight: 300;
+            border-radius: 10px;
+        }
+        
+        .popup-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .popup-content p {
+            font-size: 18px;
+            font-weight: 340;
+            margin-bottom: 20px;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            color: black; 
+            background: white;
+            cursor: pointer;
+            outline: none;
+            padding: none;
+            border-radius: 10%;
+            transition: color 0.3s ease;
+        }
+        
+        .close-button:hover {
+            color: rgb(17, 23, 90); /* Change the color when hovered over */
+            transform: scale(1.2); 
+        }
     
-    
+        }
