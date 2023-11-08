@@ -166,6 +166,50 @@ body {
     font-size:25px;
     padding: 5%;
 }
+
+/*Internship page*/
+.h1{
+    position:relative;
+    text-align: center;
+    background-color:#0990c1;
+    font-weight: 200;
+}
+h3{
+    position:relative; 
+    text-align: center;
+    color:red;
+}
+h4{
+    position: relative;
+    color: crimson;
+}
+.para1{
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    padding: 5%;
+}
+.para2{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    padding: 2%;
+}
+.para3{
+    position:relative;
+    text-align: center; 
+    font-size:22px;;
+}
+ls1{
+    padding: 3%;
+    margin: 6%;
+    margin-left: 3%;
+}
+ol{
+    font-size: 18px;
+    color:midnightblue;
+    margin-left: 6%;
+}
 /*main carousel*/
 /*feedback part*/
 .custom-carousel-indicators {
