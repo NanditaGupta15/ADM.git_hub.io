@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <title>ADM Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-   
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">   
 </head>
 
 <body>
-      <nav class="navbar navbar-dark bg-dark" id="navbarSupportedContent"> 
+      <nav class="navbar navbar-dark bg-blue" id="navbarSupportedContent"> 
         <div class="container-fluid">
+          <div class="adm p-3 m-2" >
+            <img class="rounded img-thumbnail" src="adm.png" alt="logo" style="width: 100px; height: auto;border-radius:50%;">
+           <a class="navbar-brand p-3" href="index.html">Anita Devi Memorial </a>
+          </div>
   <ul class="navbar-nav navigation-items ml-auto d-lg-flex flex-row"  >
     <li class="nav-item" >
       <a class="nav-link" aria-current="page"  title="You are on Home Page">Home</a>
     </li>
  
     <li class="nav-item">
-      <a class="nav-link" href="photogallery.html">Photo Gallery</a>
-    </li>
+      <a class="nav-link" href="photogallery.html">Photo Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="#Registration">Registration</a></li>
+      <li class="nav-item"><a class="nav-link" href="#Registration">Certificate</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Internship</a></li>
+      <li class="nav-item"><a class="nav-link" href="#About">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
   </ul>
           
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" >
@@ -35,16 +41,6 @@
             <button type="button" data-bs-theme="light" class="btn-close bg-light" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body bg-dark text-light ">
-            <!-- <ul class="navbar-nav navigation-items d-flex d-lg-none flex-column"  >
-              <li class="nav-item" >
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-              This comment will be removed later 
-             
-                <li class="nav-item">
-                  <a class="nav-link active" href="photogallery.html">Photo Gallery</a>
-                </li>
-              </ul> -->
               <ul class="navbar-nav  navigation-items">
                 <li class="nav-items">
                   <a class="nav-link active" href="contact_us.html">Contact Us</a>
@@ -67,9 +63,12 @@
  
           </div>
           
-      </nav> 
-<div class="d-flex m-5 border row justify-content-evenly" style="border-radius: 20px; background-color: #c2d5da;">
-    <h1 class="fw-bold text-center">Anita Devi Memorial Education and Welfare Society</h1>
+      </nav>
+      <div id="About" >
+
+      <div class="d-flex m-5 p-5 border row justify-content-evenly" style="border-radius: 20px; background-color: #c2d5da;">
+    <h1 class="fw-bold text-center mb-5">Anita Devi Memorial Education and Welfare Society</h1>
+    
     <div class="col-sm-4">
     <img src="adm.png" alt="logo" style="width:99%;" class="justify-content-start m-2">
     </div>
@@ -81,22 +80,23 @@
         </p>
     </div>
 </div>
+      </div>
 
     <!-- Upcoming events-->
     
-    <div class="row m-4">
+    <div class="row m-1">
        <div class="col-sm-6">
       <marquee class="blink">UPCOMING EVENTS</marquee>
-       <div class="row">    
+       <div class="row mb-2">    
     <div class="col-sm-6">
     <div class="cards">
-      <h3>TB awarness Camp</h3>
-      <p><button>Read more</button></p>
+      <h3>TB Awarness <br /> Camp</h3>
+      <button onclick="showPopup('TBContent')">Know more</button>
 </div></div>
     <div class="col-sm-6">
     <div class="cards">
-      <h3>Eye checking camp</h3>
-      <p><button>Read more</button></p>
+      <h3>Eye Checking <br /> Camp</h3>
+      <button onclick="showPopup('EyeContent')">Know more</button>
     </div>
   </div>
   </div>
@@ -104,16 +104,52 @@
     <div class="col-sm-6">
     <div class="cards">
       <h3>Medical <br />Awarness</h3>
-	    <button onclick="myFunction()" id="myBtn">Read more</button>
+	    <button onclick="showPopup('MedicalContent')">Know more</button>
      </div>
   </div>
     <div class="col-sm-6">
     <div class="cards">
-      <h3>Women's Empowerment </h3>
-	  <button>Read more</button>
+      <h3>Women's <br /> Empowerment </h3>
+	  <button onclick="showPopup('WomenContent')">Know more</button>
       </div>
     </div>
 </div>
+</div>
+<div id="TBContent" class="popup-content">
+  <h2>TB awarness Camp</h2>
+  <p>Join us at our TB Awareness Camp, where we aim to raise awareness about Tuberculosis (TB), a serious health concern affecting communities globally. This informative event provides essential insights into TB prevention, early detection, and available treatments. Our experts will share valuable knowledge, enabling attendees to understand the signs and symptoms, risk factors, and best practices for prevention. Together, let's combat TB and work towards a healthier, TB-free future.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('TBContent')">&times;</button>
+</div>
+<div id="EyeContent" class="popup-content">
+  <h2>Eye checking camp</h2>
+  <p>Join us at our Eye Checking Camp, where we provide a comprehensive range of essential services to ensure optimal eye health for all participants. Our activities include free eye screenings conducted by experienced optometrists who perform thorough examinations to detect vision issues and common eye conditions. Additionally, we offer personalized vision consultations with eye care professionals, where participants can discuss their individual eye health and potential corrective measures. Through our informative eye health education sessions, attendees gain valuable insights into best eye care practices, preventive measures, and early signs of eye-related problems. We also provide eyewear assistance, guiding individuals in selecting suitable eyeglass frames and lenses tailored to their preferences and prescriptions. Beyond these services, our Eye Checking Camp fosters community engagement, allowing participants to connect with like-minded individuals dedicated to promoting eye health and overall well-being. Prioritize your vision with us and take the first step towards clearer, healthier eyes.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('EyeContent')">&times;</button>
+</div>
+<div id="MedicalContent" class="popup-content">
+  <h2>Medical Awareness</h2>
+  <p>Health the most valuable asset. In spite of having all luxury and comfort in life an individual can't be happy if he/she is not healthy. Medical awareness is a vital aspect of our lives that should never be overlooked. It empowers us to take control of our health, make informed decisions, and contribute to the well-being of our communities. In a world where health is wealth. 
+    Education plays a major role in understanding the importance of health and the factors affecting it. Maintaining a proper routine, nutrition, exercise and hygiene proves to be helpful. Being aware of the causing factors even helped us during Covid period.
+    Prevention is better than cure it's a thought that suggests knowing the risk factors for any disease. Getting regular health checkups ease early detection of any medical issue.
+    Mental health being an indispensable part of life should also be considered as most of the people tend to avoid it. Being informed about your health empowers you to make decisions that are best for you. Early detection can save you and the healthcare system significant costs in the long run. Participating in community health initiatives, workshops, or support groups may expand your knowledge and heal with others.
+    Let's make a conscious effort to prioritize our well-being through medical awareness.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('MedicalContent')">&times;</button>
+</div>
+<div id="WomenContent" class="popup-content">
+  <h2>Women's Empowerment</h2>
+  <p>Women's empowerment is more than simply a phrase; it represents a  shift in society's perception and approach to utilising the potential of women.
+    It's about giving women the resources, chances, and freedom to speak up, take control of their futures, and actively contribute to their communities.
+    Having access to a good education is important.Women who have more education are better able to make decisions about their lives, professions, and health that will benefit their families and communities.
+    Women who are empowered are more likely to make healthy decisions for their families and themselves, as well as to have greater access to healthcare. As a result, general health and wellbeing increase.
+    For fair and representative government, women must participate in politics. Politically empowering women makes ensuring that their opinions are taken into account and that their voices are heard when making decisions.
+    Women's empowerment results in notable transformations. Strong women frequently serve as agents of social change, fostering acceptance and harmony among neighbours.
+    Women who are empowered set an example for younger generations and encourage them to strive for excellence.
+    Women's empowerment is a societal need, not merely a problem for women. By fostering more just, and successful communities and countries, it benefits everyone. It takes coordinated efforts from governments, organisations, and individuals to attain true empowerment. 
+    It is essential that we help in empowering women and giving them the opportunity to shine as equal contributors to our common future.</p>
+  <!-- Add more content here if needed -->
+  <button class="close-button" onclick="closePopup('WomenContent')">&times;</button>
 </div>
      <!-- carousel-->
      <div class="col-sm-6">
@@ -156,6 +192,7 @@
     </div>
   </div>
 <!-- Registration form-->
+<div id="Registration">
 	<div class="row p-5 d-flex justify-content-center">
     <div class="col-sm-10 col-lg-6">
     <section id="registration-form-section" class="section mt-5">
@@ -191,13 +228,14 @@
     </form>
 </section>
     </div>
-
+  
 <!--certification form-->
     <!-- certification form-->
+    
  <div class="col-sm-10 col-lg-6">
     <section id="certificate-form-section" class="section mt-5">
     <h2>Request a Certificate</h2>
-    <form id="certificate-form">
+    <form id="certificate-form" method="post" action="cert.php">
         <div class="form-group">
             <label for="your-name">Name:</label>
             <input type="text" id="your-name" placeholder="John" name="yourName" required/>
@@ -225,8 +263,8 @@
 		</div>
     </form>
     </section>
-</div>
-</div>
+</div></div>
+
 
 <!--registration form-->
 
@@ -253,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item"><!--2 FEEDBACK-->
+            <div class="carousel-item"><!--2 FEEDBACK-->
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
                             <div class="card text-center">
@@ -328,6 +366,7 @@
         </div>
     </div>
     <!--feedback part-->
+    <div id="Contact">
     <footer>
         <div class="row justify-content-center">
             <div class="col-lg-3 col-sm-12">
@@ -366,6 +405,7 @@
         <p><i class="fa-regular fa-envelope"></i> admissions@admedusociety.com</p>
         <p>&#9743; 9671457366,9958586721</p>
         <p>ADM Society | All Rights Reserved </p>
+  </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

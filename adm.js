@@ -62,3 +62,15 @@ function myFunction1() {
             moreText.style.display = "inline";
           }
         }
+// read more vala kam 
+function showPopup(popupId) {
+  var popup = document.getElementById(popupId);
+  popup.style.display = "block";
+  document.body.classList.add("disable-scroll");
+}
+
+function closePopup(popupId) {
+  var popup = document.getElementById(popupId);
+  popup.style.display = "none";
+  document.body.classList.remove("disable-scroll");
+}
