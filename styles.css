@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 .container{
-    padding: 8px 8%;
+    padding: 5px;
   }
 .offcanvas{
     margin: 0;
@@ -583,4 +583,9 @@ input[type="date"] {
       transition: background-color 5000s ease-in-out 0s;
       -webkit-text-fill-color: #fff !important;
     }
+
+    @media screen and  (min-width: 200px) and (max-width:420px) {
+        a[href="index.html"]{
+          font-size: 15px;}
+       }
   
