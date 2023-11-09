@@ -19,7 +19,7 @@
     font-weight: bold;  
 }
 .navigation-items>.nav-item{
-    margin: 10px;
+    margin: 5px;
     padding-left: 20px;
     display: flex;
     align-items: center;
