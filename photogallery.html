@@ -77,7 +77,7 @@
             font-size: 18px;
             margin: 0;
         }
-        @media (max-width: 1100px) {
+        @media (max-width: 729px) {
             .gallery {
                 grid-template-columns: repeat(1, 1fr); /* Display one image at a time on phones */
             }
@@ -85,32 +85,31 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-blue" id="navbarSupportedContent"> 
-        <div class="container-fluid">
-          <div class="adm p-3 m-2" >
-            <img class="rounded img-thumbnail" src="adm.png" alt="logo" style="width: 100px; height: auto;border-radius:50%;">
-           <a class="navbar-brand p-3" href="index.html">Anita Devi Memorial </a>
+    <nav class="navbar navbar-dark bg-blue p-2" id="navbarSupportedContent"> 
+        <div class="container-fluid d-flex flex-row">
+          <div class="adm" >
+            <img class="rounded img-thumbnail" src="adm.png" alt="logo" style="width: 50px; height: auto;border-radius:50%;">
+           <a class="navbar-brand p-1" href="index.html">Anita Devi Memorial </a>
           </div>
-  <ul class="navbar-nav navigation-items ml-auto d-lg-flex flex-row"  >
+  <ul class="navbar-nav navigation-items d-none d-sm-none d-ml-auto d-lg-flex flex-row" style="font-size: 12px;" >
     <li class="nav-item" >
-        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-      </li>
+      <a class="nav-link" aria-current="page"  href="index.html">Home</a>
+    </li>
  
     <li class="nav-item">
       <a class="nav-link" href="photogallery.html">Photo Gallery</a></li>
       <li class="nav-item"><a class="nav-link" href="#Registration">Registration</a></li>
       <li class="nav-item"><a class="nav-link" href="#Registration">Certificate</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Internship</a></li>
+      <li class="nav-item"><a class="nav-link" href="internship.html">Internship</a></li>
       <li class="nav-item"><a class="nav-link" href="#About">About Us</a></li>
       <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
-  </ul>
-          
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-       </div>
-
+    </ul>
     
+    <button class="navbar-toggler d-block d-ml-none d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
           <div class="offcanvas-header" style="padding: 25px  25px 0 25px ">
             <h5 class="offcanvas-title bg-dark text-light" id="offcanvasResponsiveLabel" >Menu</h5>
@@ -119,6 +118,12 @@
           <div class="offcanvas-body bg-dark text-light ">
               <ul class="navbar-nav  navigation-items">
                 <li class="nav-items">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-items">
+                  <a class="nav-link active" href="photogallery.html">Photo Gallery</a>
+                </li>
+                <li class="nav-items">
                   <a class="nav-link active" href="contact_us.html">Contact Us</a>
                 </li>
                 <li class="nav-items">
@@ -126,10 +131,10 @@
                 </li>
                 <li class="nav-items">
                  
-                  <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticBackdrop" aria-current="page" href="#">About Us</a>
+                  <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#staticBackdrop" aria-current="page" href="#About">About Us</a>
                 </li>
                 <li class="nav-items">
-                  <a class="nav-link active" aria-current="page" href="#">Internship</a>
+                  <a class="nav-link active" aria-current="page" href="internship.html">Internship</a>
                 </li>
                                        <li class="nav-items">
                   <a class="nav-link active" aria-current="page" href="#registration-form-section">Registration</a>
@@ -144,7 +149,7 @@
     <h3>Photo <span>Gallery</span></h3> 
     </div>
     <br>
-    <div class="gallery">
+    <div class="gallery p-5">
         <div class="image-container">
             <img class="image" src="image for photo gallery/plantation1.jpg" alt="Plantation 1">
             <div class="overlay">
@@ -368,13 +373,13 @@
             </div>
             <div class="col-lg-3 col-sm-6">
                 <h6>Our Branches:</h6>
-                <ol>
+                <ul>
                     <li>Pataudi road, Farrukhnagar</li>
                     <li>NM 22,Old DLF, Sector 14, Gurugram</li>
                     <li>Opp.Old Bus Stand , Bahadurgarh</li>
                     <li>Haily Mandi Road,Opp.Oriental Bank,Pataudi</li>
                     <li>Agro Mall, Rohtak</li>
-                </ol>
+                </ul>
             </div>
         <div class="col-lg-3 col-sm-6">
             <p>Opening hours:</p>

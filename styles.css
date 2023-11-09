@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 .container{
-    padding: 8px 8%;
+    padding: 5px;
   }
 .offcanvas{
     margin: 0;
@@ -19,7 +19,7 @@
     font-weight: bold;  
 }
 .navigation-items>.nav-item{
-    margin: 10px;
+    margin: 5px;
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -179,14 +179,30 @@ body {
     position:relative; 
     text-align: center;
 }
-.h3{
+.intern{
+    padding: 3%;
     position:relative; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 200%;
     text-align: center;
-    color:red;
+    color:#146380;
+    margin: auto;
+    width: 40%;
+    border-radius: 2%;
+    border: 3px solid #146380;  
 }
-h4{
-    position: relative;
-    color: crimson;
+.job{
+    padding: 10%;
+    position:relative; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 200%;
+    color:#146380;
+    margin: auto;
+    width: 20%;
+    border-radius: 2%;
+    border: 3px solid #146380;
 }
 .para1{
     position: relative;
@@ -206,10 +222,6 @@ h4{
     font-size:22px;
     margin:3%;
 }
-.ls1{
-    padding: 3%;
-    margin-left: 3%;
-}
 .ls2{
     padding: 5%;
     margin-left: 1%;
@@ -219,8 +231,56 @@ ol{
     color:midnightblue;
     margin-left: 6%;
 }
-
-
+.ls1{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 1500px;
+   flex-wrap: wrap;
+   z-index: 1;
+}
+.ak{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 58px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: #065072;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-top:  1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.ls1 .card .ak h4 {
+       position: absolute;
+       top:10px;
+       right: centre;
+       font-size: 8 Bem;
+       font-weight: bold;
+       font-family: 'Times New Roman', Times, serif;
+       pointer-events: none;
+       color: rgba(248, 248, 243, 0.979)
+     }
+.ls1 .card .ak { 
+   padding: 20px;
+   text-align: center;
+   transition: 0.5s;
+   transform: translateY(100px);
+}
+.ls1 .card:hover .ak {
+    transform: translateY(0px);
+    opacity: 1;   
+}
+.ls1 .card .ak ol{ 
+   font-size: 1.3em;
+   color: rgb(247, 248, 248);
+   font-weight: 1500 px;
+}
 /*main carousel*/
 /*feedback part*/
 .custom-carousel-indicators {
@@ -583,4 +643,9 @@ input[type="date"] {
       transition: background-color 5000s ease-in-out 0s;
       -webkit-text-fill-color: #fff !important;
     }
+
+    @media screen and  (min-width: 200px) and (max-width:420px) {
+        a[href="index.html"]{
+          font-size: 15px;}
+       }
   
