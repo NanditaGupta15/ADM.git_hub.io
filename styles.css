@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .container{
     padding: 5px;
   }
@@ -141,8 +146,8 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  margin: 10px 5px 10px 5px;
-
+  margin: 15px 0 ;
+ height: 170px;
 }
 .cards:hover {
             background-color: rgb(125, 137, 151); 
@@ -642,3 +647,35 @@ input[type="date"] {
       transition: background-color 5000s ease-in-out 0s;
       -webkit-text-fill-color: #fff !important;
     }
+
+    @media all and (min-width:200px) and  (max-width: 450px)  {
+
+        #carouselExampleSlidesOnly{
+            overflow: auto;
+        }
+        #carouselExampleSlidesOnly>.carousel-inner {
+            transform: scale(1, 0.5);
+
+        }
+      }
+
+    @media all and (min-width:451px) and  (max-width: 600px)  {
+
+        #carouselExampleSlidesOnly{
+            overflow: auto;
+        }
+        #carouselExampleSlidesOnly>.carousel-inner {
+            transform: scale(1, 1);
+
+        }
+      }
+
+    @media all and (min-width:601px) and  (max-width: 720px)  {
+
+        #carouselExampleSlidesOnly{
+            overflow: auto;
+        }
+        #carouselExampleSlidesOnly>.carousel-inner {
+            transform: scale(1, 2);
+        }
+      }
