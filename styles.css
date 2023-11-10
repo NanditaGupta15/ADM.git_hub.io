@@ -19,7 +19,7 @@
     font-weight: bold;  
 }
 .navigation-items>.nav-item{
-    margin: 5px;
+    margin: 10px;
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -663,12 +663,7 @@ footer .social_icon li a{
 
                 height: 250px;
             }
-        #About {
-            height: auto;
-            width: auto;
-            font-weight: 500;
-            font-size: 18px;
-        }
+
         .popup-content {
             display: none;
             position: fixed;
@@ -785,12 +780,6 @@ footer .social_icon li a{
             left: -15px;
          }
         }
-        #About {
-            height: auto;
-            width: auto;
-            font-weight: 500;
-            font-size:18px;
-        }
 /*cert form*/
 body {
     font-family: Arial, sans-serif;
@@ -853,6 +842,6 @@ input[type="date"] {
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
       transition: background-color 5000s ease-in-out 0s;
-      -webkit-text-fill-color: #fff !important;
+      -webkit-text-fill-color: black !important;
     }
   
