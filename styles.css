@@ -168,6 +168,11 @@ body {
 }
 
 /*Internship page*/
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .h1{
     position:relative;
     text-align: center;
@@ -258,7 +263,7 @@ body {
     font-size: 18px;
     
 }
-.left-container{
+.left-container{  
     left: -400px;
 }
 .right-container{
@@ -288,12 +293,12 @@ body {
     position: absolute;
     width: 70px;
     border-radius: 50%;
-    right: -60px;
+    right: -65px;
     top:32px;
     z-index: 10;
 }
 .right-container img{
-    left:-60px;
+    left:-65px;
 }
 .left-container-arrow{
   height: 0;
@@ -763,7 +768,7 @@ footer .social_icon li a{
             animation: moveline 6s linear forwards;
         }
          .text-box{
-            font-size: 13px;
+            font-size: 22px;
          }
          .text-box small{
             margin-bottom: 10px;
