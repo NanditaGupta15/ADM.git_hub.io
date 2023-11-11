@@ -168,8 +168,8 @@ body {
 }
 
 /*Internship page*/
-* {
-    margin: 1px;
+ .last {
+    margin: 12px;
     padding: 0;
     box-sizing: border-box;
   }
